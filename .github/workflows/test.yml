@@ -24,7 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
       - name: Sleep 2 minutes
         run: sleep 120
+      - name: List lines in calls.txt that are not in defines.txt in mismatch.txt
+        run: comm -13 <(sort -u defines.txt) <(sort -u calls.txt) > mismatch.txt
+      - name: Validate that mismatch.txt is empty
+        run: test \! -s mismatch.txt
+
