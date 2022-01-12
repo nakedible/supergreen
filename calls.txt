@@ -1,10 +1,10 @@
 bar
 foo
 foo
-bar
+barr
 foo
 baz
 foo
-bar
-bar
+barr
+barr
 baz
