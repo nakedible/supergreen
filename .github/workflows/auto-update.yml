@@ -1,11 +1,12 @@
 name: Auto-update
+
 on:
   push:
-    branches:
-      - main
+    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
-  Auto:
+  auto:
     name: Auto-update
     runs-on: ubuntu-latest
     steps:
