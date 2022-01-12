@@ -1,9 +1,9 @@
 foo
 foo
-barr
+bar
 foo
 baz
 foo
-barr
-barr
+bar
+bar
 baz
